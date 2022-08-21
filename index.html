@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>👩‍👧‍👦Mom&amp;Kids</title>
+    <style>
+      div {
+        text-align: center;
+        width: 100%;
+      }
+      ul {
+        padding: 10px 0 10px 0;
+      }
+      li {
+        background-color: rgba(250, 234, 86, 0.89);
+        border: 1px solid rgba(250, 234, 86, 0.89);
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #41700b;
+        color: #c80934;
+        display: inline;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 15px;
+        padding: 8px;
+      }
+
+      li:hover {
+        cursor: pointer;
+      }
+
+      hr {
+        background: linear-gradient(
+          110.1deg,
+          rgb(65, 112, 11) 2.9%,
+          rgb(250, 234, 86) 90.3%
+        );
+        border: none;
+        height: 45px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+      img {
+        border-radius: 10px;
+        float: left;
+        margin: 10px;
+        width: 40%;
+      }
+      h1 {
+        color: #41700b;
+        font-size: 80px;
+        margin: 0 auto;
+      }
+      h2 {
+        color: #c80934;
+        margin: 0 auto;
+        text-decoration: underline;
+      }
+      button {
+        background-color: #41700b;
+        box-shadow: 2px 2px 5px #41700b;
+        border: none;
+        border-radius: 40px;
+        color: white;
+        font-size: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding: 10px 45px 10px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: rgb(250, 234, 86);
+        color: #c80934;
+        cursor: pointer;
+      }
+      strong {
+        color: #41700b;
+      }
+      .aboutMe {
+        font-size: 18px;
+      }
+      .instaAccount {
+        border: 3px solid #41700b;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px 50px 10px;
+      }
+      .apply {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body cz-shortcut-listen="true">
+    <div>
+      <ul>
+        <li>Create with Kids</li>
+        <li>Sport with Kids</li>
+        <li>Contacts</li>
+      </ul>
+      <hr />
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/031/original/FF00C696-BDEF-418C-BD33-CC946B36FD60.jpeg?1653311471"
+      />
+      <h1>Mom &amp; Kids</h1>
+      <h2>Children like being with you!</h2>
+      <br />
+      <p>
+        <span class="aboutMe">
+          <em
+            >Being mom can change your life upside-down... <br />
+            But it is not very hard if you know some tricks about that. <br />
+            I've got 3 Kids and I know for sure what I am talking about!<br />
+            With my help you'll be active, creative and your kids would be
+            really happy with you!</em
+          ><br /><br />
+        </span>
+      </p>
+      <span class="instaAccount">
+        You have to see
+        <a href="https://www.instagram.com/olga.momslife/" target="_blank"
+          ><strong>MY INSTAGRAM!</strong></a
+        >
+      </span>
+      <br /><br />
+      <div class="apply">
+        You can apply for membership at my Moms-Club and I will send you the
+        quest,<br />
+        which you can make easily with your Kid!<br />
+        Each Monday I'll send you files to download and have fun with your Kids!
+      </div>
+      <br />
+      <button>Apply to get Quest</button>
+    </div>
+    <script>
+      function apply() {
+        let name = prompt("Hello! What's your name?");
+        let kids = prompt("How many Kids do you have?");
+
+        if (kids < 1) {
+          alert("Sorry, you can't apply!");
+        } else {
+          prompt("What's your e-mail address?");
+          alert(name + ", welcome to our Moms-Club! Please, check your e-mail");
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
