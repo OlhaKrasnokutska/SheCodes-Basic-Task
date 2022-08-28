@@ -68,7 +68,9 @@
           Each Monday I'll send you files to download and have fun with your
           Kids!
         </div>
-        <div class="btn button d-block mt-3 mb-5">Apply to get Quest</div>
+        <div class="btn button d-block mt-3 mb-5" id="button">
+          Apply to get Quest
+        </div>
         <script>
           function apply() {
             let name = prompt("Hello! What's your name?");
@@ -83,7 +85,7 @@
               );
             }
           }
-          let contactButton = document.querySelector("button");
+          let contactButton = document.querySelector("#button");
           contactButton.addEventListener("click", apply);
         </script>
       </div>
