@@ -87,7 +87,9 @@ h2 {
 strong {
   color: var(--primary-color);
   font-family: "Abril Fatface", cursive;
+  text-decoration: underline;
 }
+
 .aboutMe {
   font-size: 14px;
 }
